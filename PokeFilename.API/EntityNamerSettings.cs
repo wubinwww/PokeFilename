@@ -5,14 +5,14 @@ namespace PokeFilename.API
 {
     public class EntityNamerSettings
     {
-        [Category("Entity Namer Selection"), Description("Select an entity namer preset")]
+        [Category("PKM名称设定选择"), Description("选择宝可梦名称设定")]
         public EntityNamers Namer { get; set; }
 
-        [Category("CustomNamer Settings"), Description("PKM Name format for Regular Pokemon")]
+        [Category("自定义名称设置"), Description("自定义宝可梦的名称格式2")]
         public string CustomPatternRegular { get; set; } = "{Species} - {Nickname} - {PID}";
 
-        [Category("CustomNamer Settings"), Description("PKM Name format for Gameboy Pokemon")]
-        public string CustomPatternGameBoy { get; set; } = "{Species} - {Nickname} - {DV16}";
+        [Category("自定义名称设置"), Description("自定义宝可梦的PKM名称格式1")]
+        public string CustomPatternGameBoy { get; set; } = "{Species}-★-{Nickname}-昵称{OT_Name}-性别{OT_Gender}-里id{DisplaySID}-表id{DisplayTID}-语言{Language}-{PID}";
 
         public IFileNamer<PKM> Create() => Namer switch
         {

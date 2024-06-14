@@ -1,19 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <OutputType>Library</OutputType>
-    <LangVersion>12</LangVersion>
+    <LangVersion>11</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Costura.Fody" Version="5.8.0-alpha0098" PrivateAssets="all" />
-    <PackageReference Include="Fody" Version="6.6.4" PrivateAssets="all" />
+	<PackageReference Include="Costura.Fody" Version="5.8.0-alpha0098" PrivateAssets="all" />
+	<PackageReference Include="Fody" Version="6.8.1" PrivateAssets="all" />
     <PackageReference Include="PKHeX.Core" Version="24.6.3" ExcludeAssets="runtime" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\PokeFilename.API\PokeFilename.API.csproj" />
   </ItemGroup>
+
   <ItemGroup>
     <Compile Update="Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -21,13 +25,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="Resources\img\" />
   </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Update="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
 </Project>

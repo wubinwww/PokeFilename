@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PokeFilename.API/1.0.0": {
+        "dependencies": {
+          "PKHeX.Core": "24.6.3"
+        },
+        "runtime": {
+          "PokeFilename.API.dll": {}
+        }
+      },
+      "PKHeX.Core/24.6.3": {
+        "runtime": {
+          "lib/net8.0/PKHeX.Core.dll": {
+            "assemblyVersion": "24.6.3.0",
+            "fileVersion": "24.6.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PokeFilename.API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PKHeX.Core/24.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KASiuoMgII8uzjsbm+IFeO7H+5C45aRp0ryunO95EEflVAnvtsZ2F9WSGvrU7ZzDrEzx+kfUHmqz14e+Rcc6bQ==",
+      "path": "pkhex.core/24.6.3",
+      "hashPath": "pkhex.core.24.6.3.nupkg.sha512"
+    }
+  }
+}

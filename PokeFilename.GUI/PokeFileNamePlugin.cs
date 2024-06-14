@@ -7,7 +7,7 @@ namespace PokeFilename
 {
     public sealed class PokeFileNamePlugin : IPlugin
     {
-        public string Name => "PokéFilename";
+        public string Name => "PKM改名插件";
         public int Priority => 1; // Loading order, lowest is first.
 
         // Initialized on plugin load
@@ -58,12 +58,12 @@ namespace PokeFilename
 
         public void NotifySaveLoaded()
         {
-            Console.WriteLine($"{Name} was notified that a Save File was just loaded.");
+            Console.WriteLine($"{Name} 收到保存文件刚刚加载的通知.");
         }
 
         public bool TryLoadFile(string filePath)
         {
-            Console.WriteLine($"{Name} was provided with the file path, but chose to do nothing with it.");
+            Console.WriteLine($"{Name} 提供了文件路径，但选择不对其执行任何操作.");
             return false; // no action taken
         }
     }
